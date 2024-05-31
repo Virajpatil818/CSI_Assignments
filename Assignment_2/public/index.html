@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Management Tool</title>
+</head>
+<body>
+  <h1>File Management Tool</h1>
+
+  <section>
+    <h2>Create File</h2>
+    <input type="text" id="create-filename" placeholder="Filename">
+    <textarea id="create-content" placeholder="File content"></textarea>
+    <button onclick="createFile()">Create File</button>
+  </section>
+
+  <section>
+    <h2>Read File</h2>
+    <input type="text" id="read-filename" placeholder="Filename">
+    <button onclick="readFile()">Read File</button>
+    <pre id="file-content"></pre>
+  </section>
+
+  <section>
+    <h2>Delete File</h2>
+    <input type="text" id="delete-filename" placeholder="Filename">
+    <button onclick="deleteFile()">Delete File</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
